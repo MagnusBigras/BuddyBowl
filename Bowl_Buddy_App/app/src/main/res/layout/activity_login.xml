@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoimage"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/usernametextbox"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimage"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <EditText
+        android:id="@+id/PasswordTextBox"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametextbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/RememberMeRedioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Remember Me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTextBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ForgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:text="Forgot Password"
+        android:textColor="#ADD8E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/RememberMeRedioButton"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTextBox"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#ADD8E6"
+        android:text="LOGIN"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ForgotPasswordButton"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="RegisterButton"
+        android:textColor="#ADD8E6"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="9dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PasswordTextBox"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/usernametextbox"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimage"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
